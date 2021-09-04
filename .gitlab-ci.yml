@@ -1,11 +1,40 @@
-image : cypress/base :10
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
 
-stages:
-  - test
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - cache/Cypress
+    - node_modules
 
-test:
-  - stage: test
-  - script: 
-    - npm install
-    - npm run runHeadless
+install:
+  image: cypress/browsers:node14.16.0-chrome89-ff86
+  stage: build
+  only:
+    - schedules
+  script:
+    - yarn install
+    - $(yarn bin)/cypress cache path
+    - $(yarn bin)/cypress cache list
+    - $(yarn bin)/cypress verify
+  tags:
+    - cypress
 
+cypress-e2e:
+  image: cypress/browsers:node14.16.0-chrome89-ff86
+  stage: test
+  only:
+    - schedules
+  script:
+    - node ./cypress/reporting/deleteResults.js || true
+    - $(yarn bin)/cypress-tags run --env TAGS=$TAG,configFile=$ENV --browser chrome --headless
+  after_script:
+    - node ./cypress/reporting/report.js
+  artifacts:
+    expire_in: 1 week
+    when: always
+    paths:
+      - cypress/test-results/html
+  tags:
+    - cypress
