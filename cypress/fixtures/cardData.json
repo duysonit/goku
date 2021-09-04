@@ -1,0 +1,39 @@
+[
+    {
+      "CardType": "visa",
+      "CardNumber": "4242 4242 4242 4242",
+      "ExpiredDate": "1021",
+      "Cvv": "100"
+    },
+    {
+      "CardType": "master",
+      "CardNumber": "5100 0600 0000 0002",
+      "ExpiredDate": "1229",
+      "Cvv": "737"
+    },
+    {
+      "CardType": "amex",
+      "CardNumber": "374251018720018",
+      "ExpiredDate": "0330",
+      "Cvv": "7373"
+    },
+    {
+      "CardType": "discover",
+      "CardNumber": "6011 6011 6011 6611",
+      "ExpiredDate": "0330",
+      "Cvv": "737"
+    },
+    {
+      "CardType": "invalid cvv",
+      "CardNumber": "5199 9923 1264 1465",
+      "ExpiredDate": "0330",
+      "Cvv": "100"
+    },
+    {
+      "CardType": "invalid visa",
+      "CardNumber": "4000 0000 0000 9987",
+      "ExpiredDate": "1021",
+      "Cvv": "100"
+    }
+  ]
+  

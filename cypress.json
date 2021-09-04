@@ -1,0 +1,17 @@
+{
+    "projectId": "8wtsxz",
+    "env": {
+        "stagging": "https://www.amazon.com",
+        "dev": "http://cms-stylefit.cmsintegrity.com/",
+        "dev1": "https://kicuc.atlassian.net/secure/admin/CloudImport!start.jspa",
+        "production": "https://cms.stylefit.io/"
+    },
+    "baseUrl": "https://shopgoku.com/",
+
+    "requestTimeout": 10000,
+    "chromeWebSecurity": true,
+    "viewportHeight": 1300,
+    "viewportWidth": 1300
+
+
+}

@@ -1,0 +1,46 @@
+{
+  "name": "hybrid_automation",
+  "version": "1.0.0",
+  "description": "hybridOS project",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:chrome": "../../node_modules/.bin/cypress run --browser chrome",
+    "cy:run:firefox": "../../node_modules/.bin/cypress run --browser firefox",
+    "cy:run:electron": "../../node_modules/.bin/cypress run --browser electron",
+    "cy:run:record": "../../node_modules/.bin/cypress run --record",
+    "cy:open": "../../node_modules/.bin/cypress open -e TAGS=@focus",
+    
+    "cypress:pretest": "node ./cypress/reporting/deleteResults.js",
+    "cypress:report": "node ./cypress/reporting/report.js",
+    "cypress:run-focus": "yarn cypress-tags run -e TAGS=@focus --browser chrome --headless",
+    "cypress:open": "yarn cypress open -e TAGS=@focus,configFile=staging",
+    "cypress:ci-prod": "yarn cypress-tags run --env TAGS=@production,configFile=prod --browser chrome"
+
+  },
+  "keywords": [
+    "hybridOS"
+  ],
+  "author": "sonvu",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/skip-test": "^2.6.1",
+    "cypress": "8.3.1",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-sql-server": "^1.0.0",
+    "cypress-wait-until": "^1.7.1",
+    "cypress-xpath": "^1.6.2",
+    "faker": "^5.5.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

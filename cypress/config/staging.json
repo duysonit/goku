@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://staging-hybrid.autonomous.ai/",
+    "env": {
+      "db": {
+        "host": "35.185.184.70",
+        "user": "root",
+        "password": "Lg1TTzC6yj",
+        "port": 3306,
+        "database": "autonomous"
+      },
+      "url": "https://staging-hybrid.autonomous.ai/"
+    }
+  }
+  

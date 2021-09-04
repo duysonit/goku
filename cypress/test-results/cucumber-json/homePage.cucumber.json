@@ -1,0 +1,57 @@
+[
+  {
+    "description": "  This feature for homepage testing",
+    "keyword": "Feature",
+    "name": "Home Page",
+    "line": 2,
+    "id": "home-page",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "homePage.feature",
+    "elements": [
+      {
+        "id": "home-page;verify-the-title",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify the title",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 5887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I see the Title \"Autonomous | Productivity tools for modern offices\"",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
