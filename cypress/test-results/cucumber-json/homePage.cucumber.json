@@ -14,10 +14,10 @@
     "uri": "homePage.feature",
     "elements": [
       {
-        "id": "home-page;verify-the-title",
+        "id": "home-page;i-visit-homepage",
         "keyword": "Scenario",
-        "line": 14,
-        "name": "Verify the title",
+        "line": 16,
+        "name": "I visit homepage",
         "tags": [
           {
             "name": "@regression",
@@ -26,6 +26,10 @@
           {
             "name": "@focus",
             "line": 13
+          },
+          {
+            "name": "@production",
+            "line": 14
           }
         ],
         "type": "scenario",
@@ -37,17 +41,335 @@
             "name": "I visit \"/\"",
             "result": {
               "status": "passed",
-              "duration": 5887000000
+              "duration": 1365000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "I see the Title \"Autonomous | Productivity tools for modern offices\"",
+            "line": 17,
+            "name": "I see the title \"Mosh\"",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 2807000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2092000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Product\" at footer and click \"Main features\"",
+            "result": {
+              "status": "passed",
+              "duration": 4595000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"Speak naturally\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10129000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Product\" at footer and click \"Pricing\"",
+            "result": {
+              "status": "passed",
+              "duration": 5037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"Pricing Plan\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10114000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 948000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Product\" at footer and click \"Download\"",
+            "result": {
+              "status": "passed",
+              "duration": 4859000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"Spontaneous audio calls in a virtual work hub\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10078000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Help\" at footer and click \"Terms of service\"",
+            "result": {
+              "status": "passed",
+              "duration": 4849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"MOSH TERMS OF SERVICE\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10088000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 1283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Help\" at footer and click \"Privacy Policy\"",
+            "result": {
+              "status": "passed",
+              "duration": 5242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"Privacy Policy\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10213000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;i-can-direct-to-all-links-of-mosh-at-footer",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "I can direct to all links of Mosh at footer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 19
+          },
+          {
+            "name": "@production",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 1176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I find \"Help\" at footer and click \"FAQs\"",
+            "result": {
+              "status": "passed",
+              "duration": 6361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see the \"What platforms support Mosh?\" on the page",
+            "result": {
+              "status": "passed",
+              "duration": 10096000000
             }
           }
         ]

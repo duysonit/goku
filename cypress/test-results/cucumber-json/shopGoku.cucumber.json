@@ -24,7 +24,7 @@
             "line": 1
           },
           {
-            "name": "@focus",
+            "name": "@production",
             "line": 13
           }
         ],
@@ -36,8 +36,7 @@
             "line": 6,
             "name": "I visit \"/\"",
             "result": {
-              "status": "passed",
-              "duration": 4359000000
+              "status": "skipped"
             }
           },
           {
@@ -46,8 +45,7 @@
             "line": 15,
             "name": "I see the Title page shopgoku \"Home | ShopGoKu\"",
             "result": {
-              "status": "passed",
-              "duration": 16000000
+              "status": "skipped"
             }
           }
         ]

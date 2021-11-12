@@ -12,7 +12,6 @@ describe('Skip test on firefox and running only on macOS', () => {
         cy.visit('https://shopgoku.com')
         cy.contains('TRANG CHỦ').should('exist')
 
-        // const getElementPhone = cy.get('.list-unstyled > :nth-child(2) > span')
         const getElementPhone = cy.get('.list-unstyled :nth-child(2) span')
 
         getElementPhone.invoke('text').then((sdt) => {

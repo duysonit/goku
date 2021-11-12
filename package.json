@@ -1,7 +1,7 @@
 {
-  "name": "hybrid_automation",
+  "name": "goku_automation",
   "version": "1.0.0",
-  "description": "hybridOS project",
+  "description": "songoku project",
   "main": "index.js",
   "scripts": {
     "cy:run:chrome": "../../node_modules/.bin/cypress run --browser chrome",
@@ -9,16 +9,14 @@
     "cy:run:electron": "../../node_modules/.bin/cypress run --browser electron",
     "cy:run:record": "../../node_modules/.bin/cypress run --record",
     "cy:open": "../../node_modules/.bin/cypress open -e TAGS=@focus",
-    
     "cypress:pretest": "node ./cypress/reporting/deleteResults.js",
     "cypress:report": "node ./cypress/reporting/report.js",
     "cypress:run-focus": "yarn cypress-tags run -e TAGS=@focus --browser chrome --headless",
     "cypress:open": "yarn cypress open -e TAGS=@focus,configFile=staging",
     "cypress:ci-prod": "yarn cypress-tags run --env TAGS=@production,configFile=prod --browser chrome"
-
   },
   "keywords": [
-    "hybridOS"
+    "goku"
   ],
   "author": "sonvu",
   "license": "MIT",
@@ -42,5 +40,8 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0"
   }
 }
